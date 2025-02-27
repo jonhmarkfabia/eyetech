@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/PopUpStore.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Young+Serif&display=swap" rel="stylesheet">
+    <title>Eye Tech</title>
+</head>
+<body>
+
+
+    <header>
+        
+        <img class="logo"onclick="window.location.href='home.html';" src="./asset/Eye Tech.png" alt="logo">
+       
+        
+        <nav>
+            <ul class="nav-link">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="featuredpages.html">Glasses</a></li>
+                <li><a  href="about.html">About</a></li>
+                <li><a id="loginButton" href="#" onclick="openLoginModal(event)">Login</a></li>
+            </ul>
+        </nav>
+        <img id="cart-button" class="cart" onclick="checkLoginAndRedirect()" src="./asset/add-to-cart.png" alt="cart">
+
+
+    </header>
+
+   
+<div id="loginModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeLoginModal()">&times;</span>
+        <h3>Login</h3>
+        <form id="loginForm">
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button class="button-submit-click-modal" type="submit" onclick="loginUser(event)">Login</button>
+        </form>
+        <div class="options">
+            <a href="#" onclick="openForgotPasswordModal(event)">Forgot Password?</a>
+            <a href="#" onclick="openSignupModal(event)">Don't have an account? Sign Up</a>
+        </div>
+    </div>
+</div>
+
+<div id="signupModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeSignupModal()">&times;</span>
+        <h3>Sign Up</h3>
+        <form id="signupForm">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="email" id="signupEmail" placeholder="Email" required>
+            <input type="password" id="signupPassword" placeholder="Password" required>
+            <button class="button-submit-click-modal"type="submit" onclick="signupUser(event)">Sign Up</button>
+        </form>
+    </div>
+</div>
+
+
+<div id="forgotPasswordModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeForgotPasswordModal()">&times;</span>
+        <h3>Forgot Password</h3>
+        <form id="forgotPasswordForm">
+            <input type="email" id="forgotEmail" placeholder="Enter your email" required>
+            <button class="button-submit-click-modal"type="submit" onclick="resetPassword(event)">Reset Password</button>
+        </form>
+    </div>
+</div>
+
+
+
+<main class="container">
+    <h1 >EyeTech Store</h1>
+    
+    <div class="glasses-grid">
+       
+
+        
+    </div>
+</main>
+
+
+<script src="/js/PopUpStore.js"></script>
+    <script src="/js/all.js"></script>
+</body>
+
+</html>

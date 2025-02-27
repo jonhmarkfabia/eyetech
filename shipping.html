@@ -1,0 +1,78 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/shipping.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <title>Shipping - Eye Tech</title>
+    </head>
+    <body>
+        <header>
+            <div class="header-container">
+                <img class="logo" src="./asset/Eye Tech.png" alt="Eye Tech Logo" onclick="window.location.href='home.html';">
+                <button class="cancel-button" onclick="window.location.href='shoppingcart.html';">Back</button>
+            </div>
+
+        </header>
+
+        <main class="container">
+            
+            <section class="delivery-summary">
+                <h3>Delivery Address</h3>
+                <p>Loading delivery details...</p>
+            </section>
+
+           
+        <section class="shipping-method">
+        <h2>Select a Shipping Method</h2>
+        <form id="shipping-form">
+        <label>
+            <input type="radio" name="shipping" value="responsible" required>
+            <strong>Responsible Shipping</strong> (up to 5 business days)
+            <p>The shipping provider depends on the route and will be identified in the order confirmation email.</p>
+        </label>
+        <label>
+            <input type="radio" name="shipping" value="express" required>
+            <strong>Express Shipping</strong> (up to 2 business days)
+        </label>
+        <label>
+            <input type="radio" name="shipping" value="pickup" required>
+            <strong>Pick up in Store</strong>
+            <p>Collect your order from a store based on availability and location.</p>
+        </label>
+        
+        
+    </form>
+    <button type="submit" class="continue-btn">Continue</button>
+    <p id="shipping-fee">Shipping Fee: P 0.00</p>
+</section>
+
+
+<section class="order-summary">
+    <h2>Order Summary</h2>
+    <p><strong>Subtotal:</strong> <span id="subtotal"></span></p>
+    <p><strong>Shipping:</strong> <span id="shipping-cost"></span></p>
+    <p><strong>Total:</strong> <span id="total-price"></span></p>
+
+    <h3>Payment Methods</h3>
+    <div class="payment-methods">
+        <button>PayPal</button>
+        <button>GCash</button>
+        <button>GOtyme</button>
+        <button>MasterCard</button>
+    </div>
+    <div id="selected-payment"></div>
+</section>
+
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Eye Tech Glasses. All rights reserved.</p>
+        </footer>
+
+        
+
+        <script src="/js/shipping.js"></script>
+    </body>
+    </html>

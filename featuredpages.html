@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/featuredpages.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prata&family=Silkscreen:wght@400;700&family=Young+Serif&display=swap" rel="stylesheet">
+    <title>Eye Tech</title>
+</head>
+<body>
+
+    <header>
+      <img class="logo"onclick="window.location.href='home.html';" src="./asset/Eye Tech.png" alt="logo">
+        <nav>
+            <ul class="nav-link">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="featuredpages.html">Glasses</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a id="loginButton" href="#"onclick="openLoginModal(event)">Login</a></li>
+            </ul>
+        </nav>
+        <img id="cart-button" class="cart" onclick="checkLoginAndRedirect()" src="./asset/add-to-cart.png" alt="cart">
+
+    </header>
+
+    
+<div id="loginModal" class="modal">
+  <div class="modal-content">
+      <span class="close" onclick="closeLoginModal()">&times;</span>
+      <h3>Login</h3>
+      <form id="loginForm">
+          <input type="email" id="email" placeholder="Email" required>
+          <input type="password" id="password" placeholder="Password" required>
+          <button class="button-submit-click-modal" type="submit" onclick="loginUser(event)">Login</button>
+      </form>
+      <div class="options">
+          <a href="#" onclick="openForgotPasswordModal(event)">Forgot Password?</a>
+          <a href="#" onclick="openSignupModal(event)">Don't have an account? Sign Up</a>
+      </div>
+  </div>
+</div>
+
+
+<div id="signupModal" class="modal">
+  <div class="modal-content">
+      <span class="close" onclick="closeSignupModal()">&times;</span>
+      <h3>Sign Up</h3>
+      <form id="signupForm">
+          <input type="text" id="username" placeholder="Username" required>
+          <input type="email" id="signupEmail" placeholder="Email" required>
+          <input type="password" id="signupPassword" placeholder="Password" required>
+          <button class="button-submit-click-modal"type="submit" onclick="signupUser(event)">Sign Up</button>
+      </form>
+  </div>
+</div>
+
+
+<div id="forgotPasswordModal" class="modal">
+  <div class="modal-content">
+      <span class="close" onclick="closeForgotPasswordModal()">&times;</span>
+      <h3>Forgot Password</h3>
+      <form id="forgotPasswordForm">
+          <input type="email" id="forgotEmail" placeholder="Enter your email" required>
+          <button class="button-submit-click-modal"type="submit" onclick="resetPassword(event)">Reset Password</button>
+      </form>
+  </div>
+</div>
+
+        <div class="slides">
+          <!-- page1 -->
+            <div class="page">
+                <section class="left-section">
+                        <div>
+                        <img class="image-girl"  src="./asset/318485873_147720858018024_1671975095299952238_n 1.png">
+                        <h1 class="text">
+                            Simple black statement piece that comes in two different <span class="bold-text">BOLD</span> shapes. 
+                            <a href="https://www.instagram.com/murielseiquer" target="_blank">@murielseiquer</a> in EVE 01 and 
+                            <a href="https://www.instagram.com/willadevereux" target="_blank">@willadevereux</a> in ANTENA 01.
+                        </h1>
+                        <img class="text-bold" src="./asset/BOLD.png">
+                    </div>
+                     
+                </section>
+
+                <section class="center-section">
+                    <h1 class="texts">
+                        <span class="bold-text">BOLD</span>, white oval frame with gradient tips, inspired by the stars in the galaxy. 
+                        <a href="https://www.instagram.com/momo_ndiayen/" target="_blank">@momo_ndiayen</a> in EVE WC6. 
+                        <br>Entire <span class="bold-text">BOLD</span> collection is now available at <a href="https://www.gentlemonster.com" target="_blank">gentlemonster.com</a> and offline stores worldwide.
+                    </h1>
+                    <div class="image-girl-blur">     
+                        <img class="image-girls" src="./asset/318472134_138936818940404_7820376534087989844_n.png">
+                        <img class="text-bolder" src="./asset/BOLD (1).png">    
+                    </div>
+                    <h1 class="textes">
+                        Distinctive rectangular silhouette that completes a <span class="bold-text">BOLD</span> look. 
+                        <a href="https://www.instagram.com/iliasloopmans" target="_blank">@iliasloopmans</a> in SILVER CLOUDS 01.
+                    </h1>
+                </section>
+                
+                <section class="right-section">
+                    <div class="product-grid">
+                        <div class="product-card">
+                          <img class="Rectangle" src="./asset/Rectangle 16.png">
+                          <img src="./asset/image1.png" alt="Mugler - Spiral 01 M01">
+                          <h3>Mugler - Spiral 01 M01</h3>
+                          <p>P 1,999.95</p>
+                        </div>
+
+                        <div class="product-card">
+                          <img class="Rectangle" src="./asset/Rectangle 16.png">
+                          <img src="./asset/image2.png" alt="Mugler - Spiral 01 M02">
+                          <h3>Mugler - Spiral 01 M02</h3>
+                          <p>P 1,999.95</p>
+                        </div>
+
+                        <div class="product-card">
+                          <img class="Rectangle" src="./asset/Rectangle 16.png">
+                            <img src="./asset/image3.png" alt="Mugler - Spiral 01 M01">
+                            <h3>Mugler - Spiral 01 M01</h3>
+                            <p>P 1,999.95</p>
+                          </div>
+
+                          <div class="product-card">
+                            <img class="Rectangle" src="./asset/Rectangle 16.png">
+                            <img src="./asset/image4.png" alt="Mugler - Spiral 01 M02">
+                            <h3>Mugler - Spiral 01 M02</h3>
+                            <p>P 1,999.95</p>
+                          </div>
+
+                          <div class="product-card">
+                            <img class="Rectangle" src="./asset/Rectangle 16.png">
+                            <img src="./asset/image5.png" alt="Mugler - Spiral 01 M01">
+                            <h3>Mugler - Spiral 01 M01</h3>
+                            <p>P 1,999.95</p>
+                          </div>
+  
+                          <div class="product-card">
+                            <img class="Rectangle" src="./asset/Rectangle 16.png">
+                            <img src="./asset/image6.png" alt="Mugler - Spiral 01 M02">
+                            <h3>Mugler - Spiral 01 M02</h3>
+                            <p>P 1,999.95</p>
+                          </div>
+  
+                          <div class="product-card">
+                            <img class="Rectangle" src="./asset/Rectangle 16.png">
+                              <img src="./asset/image7.png" alt="Mugler - Spiral 01 M01">
+                              <h3>Mugler - Spiral 01 M01</h3>
+                              <p>P 1,999.95</p>
+                            </div>
+  
+                            <div class="product-card">
+                              <img class="Rectangle" src="./asset/Rectangle 16.png">
+                              <img src="./asset/image8.png" alt="Mugler - Spiral 01 M02">
+                              <h3>Mugler - Spiral 01 M02</h3>
+                              <p>P 1,999.95</p>
+                            </div>
+
+                            <div class="product-card">
+                              <img class="Rectangle" src="./asset/Rectangle 16.png">
+                                <img src="./asset/image9.png" alt="Mugler - Spiral 01 M01">
+                                <h3>Mugler - Spiral 01 M01</h3>
+                                <p>P 1,999.95</p>
+                              </div>
+      
+                              <div class="product-card">
+                                <img class="Rectangle" src="./asset/Rectangle 16.png">
+                                <img src="./asset/image10.png" alt="Mugler - Spiral 01 M02">
+                                <h3>Mugler - Spiral 01 M02</h3>
+                                <p>P 1,999.95</p>
+                              </div>
+      
+                              <div class="product-card">
+                                <img class="Rectangle" src="./asset/Rectangle 16.png">
+                                  <img src="./asset/image11.png" alt="Mugler - Spiral 01 M01">
+                                  <h3>Mugler - Spiral 01 M01</h3>
+                                  <p>P 1,999.95</p>
+                                </div>
+
+                                <div class="product-card">
+                                  <img class="Rectangle" src="./asset/Rectangle 16.png">
+                                  <img src="./asset/image12.png" alt="Mugler - Spiral 01 M02">
+                                  <h3>Mugler - Spiral 01 M02</h3>
+                                  <p>P 1,999.95</p>
+                                </div>
+                    </div>  
+                </section>        
+              </div>
+              <!-- page2 -->
+            <div class="page">
+            
+              <img class="green3" src="./asset/green3.png">
+              <img class="green2" src="./asset/green2.png">
+              <img class="green1" src="./asset/green1.png">
+                   
+              <div class="green-div">
+                <h1 class="green-title">
+                  Spectral Sight
+                </h1>
+                <h2 class="green-des">
+                  
+                  A new collaboration product with World of Warcraft was inspired by an iconic character, Illidan. <br>Products will be given to a limited number of participants through a draw event. Find more details via gentlemonster.com
+                  <br>’Spectral Sight’ was inspired by the fiery green eyes of a World of Warcraft’s iconic character, Illidan.<br>This collaboration package comes with a code which allows to activate 30 days prepaid time for World of Warcraft: Burning Crusade Classic.
+                </h2>
+                <button class="buy-now"onclick="window.location.href='PopUpStore.html';">Buy now</button>
+              </div>
+            </div>
+            <!-- page3 -->
+            <div class="page" >  
+                  <div class="left-product-grid">
+                    <div class="left-product-card" >   
+                      <img class="imagess1" src="./asset/leftimg1.png" alt="leftimg1">
+                    </div>
+                    <div class="left-product-card">
+                      <img class="imagess2"src="./asset/leftimg2.png" alt="leftimg2">
+                    </div>
+                    <div class="left-product-card">
+                      
+                        <img class="imagess3"src="./asset/leftimg3.png" alt="leftimg3">
+                        
+                      </div>
+    
+                      <div class="left-product-card">
+                        
+                        <img class="imagess4"src="./asset/leftimg4.png" alt="leftimg4">
+                      </div>   
+                  </div>  
+                
+                  <div class="center-pick">
+                  <div class="center-pic">   
+                    <img class="center-text"src="./asset/DIVINITY.png" alt="center-pic">
+                  </div>
+
+                  <h1 class="intro">
+                    Introducing the Third Eye Collection, a creative collaboration with the Dutch<br>
+                    Furniture and lighting brand
+                    <a href="https://www.instagram.com/moooi/" target="_blank" rel="noopener noreferrer">@moooi</a>
+                  </h1>
+                  
+                  <button class="buy-now-button"onclick="window.location.href='PopUpStore.html';">Buy Now</button>
+
+                  <h1 class="outro">DIVINITY from 'The Third Eye' collection</h1>
+
+                  <div class="center-pic">   
+                    <img src="./asset/bgcenter1.png" alt="center-pic">
+                  </div>
+  
+                  <div class="center-pic">
+                    <img src="./asset/bg-center2.png" alt="center-pic">
+                    
+                  </div>
+                  </div>
+
+                  <div class="right-product-grid">
+                    <div class="right-product-card">   
+                      <img class="imagess1"src="./asset/rightimg1.png" alt="rightimg1">
+                    </div>
+    
+                    <div class="right-product-card">
+                      <img class="imagess2"src="./asset/rightimg2.png" alt="rightimg2">
+                      
+                    </div>
+                    
+    
+                    <div class="right-product-card">
+                      
+                        <img class="imagess3"src="./asset/rightimg3.png" alt="rightimg3">
+                        
+                      </div>
+    
+                      <div class="right-product-card">
+                        
+                        <img class="imagess4"src="./asset/rightimg4.png" alt="rightimg4">
+                        
+                      </div>   
+                  </div>  
+            </div>
+            <!-- page4 -->
+            <div class="page" >  
+              <div class="left-grid">
+                <div class="left-card" >
+                  <h1 class="right-text-bg">Unveiling Eye Tech x Alexander Wang second collaboration, ‘M.PRI$$’.</h1>
+                  <img class="right-img-bg"src="./asset/right-img-bg.png" alt="right-img-bg">
+                  <img class="overlay-img" src="./asset/right-img.png" alt="overlay-img">
+                  <img class="overlay-img-2" src="./asset/right-img2.png" alt="overlay-img-2">
+                  <h1 class="Alexander-wang-text">Alexander Wang</h1>
+                </div>  
+                <button class="buynowpage4"onclick="window.location.href='PopUpStore.html';">Buy now</button>
+              </div>  
+              
+            
+              <div class="right-grid-as">
+                <div class="right-card"> 
+                  <h1 class="left-text-bg">Presenting 'M.PRI$$', a unique piece designed in collaboration with<br> Alexander Wang featuring a snake wrapped around the frames.</h1>   
+                  <img class="left-img-bg" src="./asset/left-img-bg.png" alt="left-img-bg">
+                  <img class="overlay-img-left" src="./asset/left-img11.png" alt="overlay-img-left">
+                  <img class="overlay-img-left-2" src="./asset/left-img (2).png" alt="overlay-img-left-2">
+                  <h1 class="des-wang-text">M.PRI$$, the collaboration piece<br> with Alexander Wang also comes in<br> clear acetate.</h1>
+                </div>
+              </div>  
+          </div>
+
+          <!-- page5 -->
+          <div class="page" >  
+            <div class="intro-section">
+              
+              <img class="main-image" src="./asset/black0.png" alt="Main Image">
+
+              <div class="text-overlays">
+                <h2>Introducing <strong>CILICE 01</strong>,</h2>
+                <p>bold acetate sunglasses with the<br> SANKUANZ's signature metal details on the temples.</p>
+              </div>
+            
+              <div class="gallery">
+                <img class="gallery-image" src="./asset/black1.png" alt="Gallery Image 1">
+                <img class="gallery-image" src="./asset/black2.png" alt="Gallery Image 2">
+                <img class="gallery-image" src="./asset/black3.png" alt="Gallery Image 3">
+                <img class="gallery-image" src="./asset/black4.png" alt="Gallery Image 4">
+              </div>
+              <h1 class="price-gallery">Venom BRC11<br>
+                ₱‌16,500.00</h1>
+            </div>
+
+            <div class="left-intro">
+              <h1 class="intro-textss">
+                Meet the package specially designed for <br><span class="highlight">Eye Tech x SANKUANZ, ‘CILICE’ .</span><br>This package is offered to all customers who have purchased from<br>
+                the collection.<br>
+                Full collection will be available from 2nd APR exclusively in<br>
+                 China and HAUS DOSAN, Seoul.
+              </h1>
+              <div class="gallerys">
+                <img class="gallery-images" src="./asset/gray1.png" alt="Gallery Images 1">
+                <img class="gallery-images" src="./asset/gray2.png" alt="Gallery Images 2">
+              </div>
+              <h1 class="price-gallerys">Venom BRC11<br>
+                ₱‌16,500.00</h1>
+            </div>
+            
+            
+          
+            
+          </div>
+
+    </div> 
+
+    <div class="slider">
+      <div class="pagination">
+        <button class="page-btn" data-index="0">1</button>
+        <button class="page-btn" data-index="0">2</button>
+        <button class="page-btn" data-index="0">3</button>
+        <button class="page-btn" data-index="0">4</button>
+        <button class="page-btn" data-index="0">5</button>
+      </div>
+      <button class="prev">&lt;</button>
+      <button class="next">&gt;</button>
+    </div>   
+    
+    <script src="/js/featuredpages.js"></script>
+    <script src="/js/all.js"></script>
+</body>
+
+</html>

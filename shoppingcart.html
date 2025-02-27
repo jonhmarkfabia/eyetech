@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/shoppingcart.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Young+Serif&display=swap" rel="stylesheet">
+    <title>Eye Tech</title>
+</head>
+<body>
+    <header>
+        
+        <img class="logo"onclick="window.location.href='home.html';" src="./asset/Eye Tech.png" alt="logo">
+       
+        <nav>
+            <ul class="nav-link">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="featuredpages.html">Glasses</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <img id="cart-button" class="cart" onclick="checkLoginAndRedirect()" src="./asset/add-to-cart.png" alt="cart">
+
+    </header>
+
+    <div class="container">
+        <div class="shopping-cart">
+            <h1>Your Shopping Cart</h1>
+            <h2>Item</h2>
+
+            <div class="cart-items"></div>
+            <button id="proceed-to-checkout" >Proceed to Checkout</button>
+
+            </div>
+        </div>
+        <div class="delivery-address">
+            <h2>Delivery Address</h2>
+            <form id="delivery-form">
+                <label>First Name</label>
+                <input type="text" id="first_name" name="first_name" required>
+        
+                <label>Last Name</label>
+                <input type="text" id="last_name" name="last_name" required>
+        
+                <label>Email</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label>Country</label>
+                <select id="country" name="country" required>
+                    <option value="">Select</option>
+                </select>
+        
+                <label>Province</label>
+                <select id="province" name="province" required>
+                    <option value="">Select</option>
+                </select>
+        
+                <label>City</label>
+                <select id="city" name="city" required>
+                    <option value="">Select</option>
+                </select>
+        
+                <label>Barangay</label>
+                <select id="barangay" name="barangay" required>
+                    <option value="">Select</option>
+                </select>
+        
+                <label>Zip / Postcode</label>
+                <input type="text" id="postcode" name="postcode" required>
+        
+                <label>Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+        
+                <label>
+                    <input type="checkbox" id="subscribe" name="subscribe"> I agree to receive information, special offers, and promotions from Eye Tech
+                </label>
+        
+                <button type="submit" >Continue to Shipping</button>
+            </form>
+        </div>
+    </div>
+
+
+
+    <script src="/js/shoppingcart.js"></script>
+    <script src="/js/all.js"></script>
+</body>
+
+</html>
